@@ -49,20 +49,24 @@ Kali Linux uses the Xfce graphical environment, other graphical environments are
 
 Explore the Kali Linux graphical environment:
 - Start the virtual environment with **Kali Linux**.
+  ```bash
   Started Kali Linux virtual machine in Oracle VirtualBox.
-  
+  ```
 - Explore the graphical environment (menus, system information).
+  ```bash
   Explored the Kali Linux Xfce graphical environment and reviewed system information and menus.
-  
+  ```
 - Find the security tools menu and review the 5 tools you find.
+  ```bash
   Security tools reviewed: Nmap, Wireshark, John the Ripper, Burp Suite, Metasploit Framework
-  
+  ```
 - find operating system settings
   <img width="645" height="535" alt="Posnetek zaslona 2026-05-26 174934" src="https://github.com/user-attachments/assets/ba066539-77aa-41e7-af12-25a436fee5f4" />
   
 - sort file system
+  ```bash
   Explored the Linux file system using the file manager.
-
+```
 ---
 
 #### 3️⃣ Basic Command Line Commands
@@ -429,11 +433,13 @@ nth -t ef487f75307f96954d3bb132e5f4b035
 
 ## 3️⃣ Reflection and Analysis
 • Why do we use Kali Linux? What is the advantage of Kali Linux compared to other Linux distributions?
+```bash
 Kali Linux is a Linux distribution designed for cybersecurity, penetration testing, and digital forensics. It includes many preinstalled security tools that are useful for ethical hacking, network analysis, vulnerability assessment, and system diagnostics. Compared to other Linux distributions, Kali Linux is specialized for security-related tasks and provides a ready-to-use environment for cybersecurity professionals and students.
-
+```
 • Which features and tools of Kali Linux attracted you the most?
+```bash
 The most interesting features were the large number of integrated security tools and the organization of tools by categories. I found tools such as Nmap, tcpdump, SearchSploit, and dnsenum especially useful for network analysis and security testing. I also liked the lightweight Xfce graphical environment and the ability to use both graphical and command-line tools.
-
+```
 ## References
 
 1. Kali Linux., *Penetration Testing Distribution*, https://www.kali.org/
