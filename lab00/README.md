@@ -86,10 +86,14 @@ cd .. # move to the parent directory
 
 ✅ **Task:**
 - Move to your home directory.
-`cd ~`
+```bash
+cd ~
+```
 
 - Create the `linux-exercise` directory.
-  `mkdir linux-exercise`
+  ```bash
+  mkdir linux-exercise
+  ```
   
 - Enter it.
 `cd linux-exercise`
