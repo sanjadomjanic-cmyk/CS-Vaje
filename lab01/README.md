@@ -49,10 +49,19 @@ Kali Linux uses the Xfce graphical environment, other graphical environments are
 
 Explore the Kali Linux graphical environment:
 - Start the virtual environment with **Kali Linux**.
+  Started Kali Linux virtual machine in Oracle VirtualBox.
+  
 - Explore the graphical environment (menus, system information).
+  Explored the Kali Linux Xfce graphical environment and reviewed system information and menus.
+  
 - Find the security tools menu and review the 5 tools you find.
+  Security tools reviewed: Nmap, Wireshark, John the Ripper, Burp Suite, Metasploit Framework
+  
 - find operating system settings
+  <img width="645" height="535" alt="Posnetek zaslona 2026-05-26 174934" src="https://github.com/user-attachments/assets/ba066539-77aa-41e7-af12-25a436fee5f4" />
+  
 - sort file system
+  Explored the Linux file system using the file manager.
 
 ---
 
@@ -72,16 +81,102 @@ Open **terminal** and run the following commands and record the results.
 Example:
 ```bash
 whoami
+SaNjA
+
 hostnamectl
+ Static hostname: kali
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: b69758c0cad3481e967dcad827001d56
+         Boot ID: ce49d74836cb4fd6a477d34f46dc4822
+  Virtualization: oracle
+Operating System: Kali GNU/Linux Rolling          
+          Kernel: Linux 6.16.8+kali-amd64
+    Architecture: x86-64
+ Hardware Vendor: innotek GmbH
+  Hardware Model: VirtualBox
+Hardware Version: 1.2
+Firmware Version: VirtualBox
+   Firmware Date: Fri 2006-12-01
+    Firmware Age: 19y 5month 3w 3d
+
 uname -a
+Linux kali 6.16.8+kali-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.16.8-1kali1 (2025-09-24) x86_64 GNU/Linux
+
 df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            883M     0  883M   0% /dev
+tmpfs           198M  984K  197M   1% /run
+/dev/sda1        79G   19G   57G  25% /
+tmpfs           986M  4.0K  986M   1% /dev/shm
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           986M  100K  986M   1% /tmp
+AppliedCrypto   238G  234G  4.7G  99% /media/sf_AppliedCrypto
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           198M  104K  198M   1% /run/user/1000
+
 ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:63:b0:05 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute eth0
+       valid_lft 78454sec preferred_lft 78454sec
+    inet6 fd17:625c:f037:2:839f:6ded:fa07:4972/64 scope global dynamic noprefixroute 
+       valid_lft 86096sec preferred_lft 14096sec
+    inet6 fe80::2906:7497:903f:e74e/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+
+
 wget https://gist.githubusercontent.com/EdwardRayl/3436572afde8ce9e3faf5b7b95356a49/raw/6b25895fce480713560829dec31ac8220ffe5272/gists.txt
+--2026-05-26 11:57:34--  https://gist.githubusercontent.com/EdwardRayl/3436572afde8ce9e3faf5b7b95356a49/raw/6b25895fce480713560829dec31ac8220ffe5272/gists.txt
+Resolving gist.githubusercontent.com (gist.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to gist.githubusercontent.com (gist.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9634 (9.4K) [text/plain]
+Saving to: ‘gists.txt’
+
+gists.txt                                                  100%[=======================================================================================================================================>]   9.41K  --.-KB/s    in 0.001s  
+
+2026-05-26 11:57:35 (9.50 MB/s) - ‘gists.txt’ saved [9634/9634]
+
 sudo apt install 7zip
+[sudo] password for SaNjA: 
+Upgrading:                      
+  7zip
+
+Summary:
+  Upgrading: 1, Installing: 0, Removing: 0, Not Upgrading: 2036
+  Download size: 1,610 kB
+  Space needed: 7,168 B / 60.3 GB available
+
+Get:1 http://http.kali.org/kali kali-rolling/main amd64 7zip amd64 26.01+dfsg-2 [1,610 kB]
+Fetched 1,610 kB in 1s (2,413 kB/s)
+(Reading database ... 422190 files and directories currently installed.)
+Preparing to unpack .../7zip_26.01+dfsg-2_amd64.deb ...
+Unpacking 7zip (26.01+dfsg-2) over (25.01+dfsg-4) ...
+Setting up 7zip (26.01+dfsg-2) ...
+Processing triggers for kali-menu (2025.4.3) ...
+Processing triggers for man-db (2.13.1-1) ...
+
 which nmap
+/usr/bin/nmap
+
 which john
+/usr/sbin/john
+
 cd /
-ls -la
+┌──(SaNjA㉿kali)-[~/linux-exercise/test]
+└─$ cd /
+
+┌──(SaNjA㉿kali)-[/]
+└─$ 
+
+
 ```
 
 HTOP is a simple system diagnostics package. You can also try the btop package. The packages show the usage of system resources and processes, which helps us identify suspicious processes that may be running in the background.
