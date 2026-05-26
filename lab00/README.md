@@ -86,13 +86,13 @@ cd .. # move to the parent directory
 
 ✅ **Task:**
 - Move to your home directory.
-cd ~
+`cd ~`
 
 - Create the `linux-exercise` directory.
-  mkdir linux-exercise
+  `mkdir linux-exercise`
   
 - Enter it.
-cd linux-exercise
+`cd linux-exercise`
 ---
 
 ### 2️⃣ Working with files and directories
@@ -107,12 +107,12 @@ rm -r newFolder # delete the directory with the contents
 
 ✅ **Task:**
 - Create the file `description.txt` and write your name in it.
-touch description.txt
-nano description.txt
-SaNjA
+`touch description.txt`
+`nano description.txt`
+`SaNjA`
   
 - Create the directory `test`.
-mkdir test
+`mkdir test`
   
 mkdir newFolder # create a new directory
 touch file.txt # create an empty file
@@ -135,11 +135,11 @@ mv file.txt /path/to/otherfolder/ # move
 ```
 ✅ **Task:**
 - Rename `description.txt` to `my_profile.txt`.
-cd test
-mv description.txt my_profile.txt
+`cd test`
+`mv description.txt my_profile.txt`
 
 - Copy `my_profile.txt` to your home folder.
-cp my_profile.txt ~/
+`cp my_profile.txt ~/`
 
 ---
 
@@ -152,10 +152,10 @@ chmod 644 file # change permissions
 
 ✅ **Task:**
 - Check the size of all files in the folder.
-du -sh ./*
+`du -sh ./*`
 
 - Change the permissions of the file `my_profile.txt` to be read-only for everyone.
-chmod 444 my_profile.txt
+`chmod 444 my_profile.txt`
 
 ---
 
@@ -170,19 +170,16 @@ top # active processes
 ✅ **Task:**
 - Find out your username and the size of your home directory.
 whoami
-du -sh ~
+`du -sh ~`
 
 - Check how much space is available on your system.
-df -h
+`df -h`
 
 ---
 
 ## 💡 Extra task
 Find the largest file in your home directory:
-
-```bash
-du -ah ~ | sort -rh | head -n 5
-```
+`du -ah ~ | sort -rh | head -n 5`
 
 ## References
 
