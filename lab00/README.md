@@ -96,7 +96,9 @@ cd ~
   ```
   
 - Enter it.
-`cd linux-exercise`
+```bash
+cd linux-exercise
+```
 ---
 
 ### 2️⃣ Working with files and directories
@@ -111,13 +113,16 @@ rm -r newFolder # delete the directory with the contents
 
 ✅ **Task:**
 - Create the file `description.txt` and write your name in it.
-`touch description.txt`
-`nano description.txt`
-`SaNjA`
+```bash
+touch description.txt
+nano description.txt
+SaNjA
+```
   
 - Create the directory `test`.
-`mkdir test`
-  
+```bash
+ mkdir test
+```
 mkdir newFolder # create a new directory
 touch file.txt # create an empty file
 nano file.txt # edit the contents (or `vim` / `code`)
@@ -139,11 +144,14 @@ mv file.txt /path/to/otherfolder/ # move
 ```
 ✅ **Task:**
 - Rename `description.txt` to `my_profile.txt`.
-`cd test`
-`mv description.txt my_profile.txt`
-
+```bash
+cd test
+mv description.txt my_profile.txt
+```
 - Copy `my_profile.txt` to your home folder.
-`cp my_profile.txt ~/`
+```bash
+cp my_profile.txt ~/
+```
 
 ---
 
@@ -156,11 +164,18 @@ chmod 644 file # change permissions
 
 ✅ **Task:**
 - Check the size of all files in the folder.
-`du -sh ./*`
+```bash
+du -sh ./*
+4.0K    ./my_profile.txt
 
+```
 - Change the permissions of the file `my_profile.txt` to be read-only for everyone.
-`chmod 444 my_profile.txt`
-
+```bash
+ls -lh
+chmod 444 my_profile.txt
+ls -l my_profile.txt
+-r--r--r-- 1 SaNjA SaNjA 6 May 26 10:09 my_profile.txt
+```
 ---
 
 ### 5️⃣ View System Information
@@ -173,17 +188,44 @@ top # active processes
 
 ✅ **Task:**
 - Find out your username and the size of your home directory.
+
+```bash
 whoami
-`du -sh ~`
+SaNjA
 
+du -sh ~
+152K    /home/SaNjA
+
+```
 - Check how much space is available on your system.
-`df -h`
-
+```bash
+df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            883M     0  883M   0% /dev
+tmpfs           198M  984K  197M   1% /run
+/dev/sda1        79G   19G   57G  25% /
+tmpfs           986M  4.0K  986M   1% /dev/shm
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           986M  100K  986M   1% /tmp
+AppliedCrypto   238G  234G  4.7G  99% /media/sf_AppliedCrypto
+none            1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           198M  104K  198M   1% /run/user/1000
+```
 ---
 
 ## 💡 Extra task
 Find the largest file in your home directory:
-`du -ah ~ | sort -rh | head -n 5`
+```bash
+du -ah ~ | sort -rh | head -n 5
+┌──(SaNjA㉿kali)-[~/linux-exercise/test]
+└─$ du -ah ~ | sort -rh | head -n 5
+152K /home/SaNjA
+40K /home/SaNjA/.config
+28K /home/SaNjA/.local
+20K /home/SaNjA/.local/share
+16K /home/SaNjA/.java
+```
+
 
 ## References
 
