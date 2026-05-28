@@ -1,3 +1,4 @@
+[Cyber Security - Project Seminar SSH Security Weakness Study.docx](https://github.com/user-attachments/files/28359252/Cyber.Security.-.Project.Seminar.SSH.Security.Weakness.Study.docx)
 # 🛡️ Empirical Project: SSH Security Weakness Study
 
 ## 📌 Overview
@@ -181,6 +182,7 @@ Report (5–10 pages):
 4. Results  
 5. Discussion  
 6. Conclusion  
+[Cyber Security - Project Seminar SSH Security Weakness Study.docx](https://github.com/user-attachments/files/28359261/Cyber.Security.-.Project.Seminar.SSH.Security.Weakness.Study.docx)
 
 ---
 
